@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="module" client="site">
+    <name>JMultiLocGMap</name>
+    <author>Paraschiv Andrei</author>
+    <authorEmail>paraschiv.f.andrei@gmail.com</authorEmail>
+    <authorUrl>http://paratechnical.blogspot.com/</authorUrl>
+    <creationDate>January 29, 2012</creationDate>
+    <copyright>Copyright 2012 Notice</copyright>
+    <license>GPL 3.0</license>
+    <version>0.0.1</version>
+    <description>Displays a Google map in a module position with the option to display multiple markers of different categories.</description>
+    <files>
+        <filename module="mod_JMultiLocGMap">mod_JMultiLocGMap.php</filename>
+		<folder>images</folder>
+		<folder>markers</folder>
+    </files>
+	<config>
+		<fields name="params" >
+			<fieldset name="basic" addfieldpath="/modules/mod_JMultiLocGMap">
+				<field type="text" name="width" label="Width" description="Width of map." default="200" size="3" maxlength="3" />
+				<field type="text" name="height" label="Height" description="Height of map." default="150" />
+				<field type="text" name="mapName" label="Map Name" description="Uniquie Javascript variable for multiple maps on the same page!" default="map" />
+				<field type="gmaptype" name="mapType" label="Map Type" description="The default map type" var="map"/>
+				<field type="radio" name="smallmap" label="Small Map Control" description="Small map navigation controls" default="1">
+					<option value="0">Disable</option>
+					<option value="1">Enable</option>
+				</field>
+				<field type="checkbox" name="navControls" label="Navigation Controls"  description="Default Navigation Controls" value="1"/>
+				<field type="text" name="lat" label="Latitude" description="Map's Latitude" default="45.104722" />
+				<field type="text" name="lng" label="Longitude" description="Map's Longitude" default="24.375556" />
+				<field type="text" name="zoom" label="Zoom Level" description="Zoom Level" default="12" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

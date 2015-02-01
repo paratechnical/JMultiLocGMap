@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<locationlists>
+	<locationlist id="kindergartens" displayname="Gradinite">
+		<location displayname='Gradinita nr. 2' lat="45.111119" long="24.372654" zindex="2"></location>
+		<location displayname='Gradinita nr. 1' lat="45.106455" long="24.364715" zindex="1"></location>
+	</locationlist>
+
+	<locationlist id="schools" displayname="Scoli">
+		<location displayname='Scoala nr. 1' lat="45.106455" long="24.364071" zindex="1"></location>
+		<location displayname='Scoala nr. 2' lat="45.111331" long="24.36729" zindex="2"></location>
+	</locationlist>
+
+</locationlists>
